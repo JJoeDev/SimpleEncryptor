@@ -1,6 +1,19 @@
 # SimpleEncryptor
-A simple app that can en/decrypt files using OpenSSL
+A simple app using OpenSSL to encrypt and decrypt files using a symmetric encryption algorithm.
 
-Currently the password, target encrypt file, and target decrypt file is all hard coded into it so it is not ready for use. 
+## WARNING 
+I am not a cryptographer and this might very well be very insecure.
 
-The encryption also uses symetric encryption and is not the most secure way of encrypting data.
+## Compiling
+
+### Prerequisites
+- OpenSSL
+- gcc
+
+If you would like to give this small project a try, go ahead and clone it.
+
+Compiling is as easy as running:
+
+```bash
+g++ main.cpp -o encryptor -lssl -lcrypto
+```
